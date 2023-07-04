@@ -1,0 +1,568 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #0093E9;
+  background: linear-gradient(to right, #360033, #0b8793);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  width: 100%;
+  height: 30px;
+  font-size: 40px;
+  color: lemonchiffon;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courgette", cursive;
+  cursor: default;
+}
+
+.box {
+  width: 25%;
+  height: 425px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #1f001e;
+  box-shadow: 0 0 30px gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box:hover .bookBox {
+  height: 140px;
+  bottom: 50px;
+}
+.box:hover .bookBox > .book {
+  transform: perspective(800px) rotateX(90deg);
+}
+.box:hover .text {
+  transform: translateY(-120px);
+}
+.box .bookBox {
+  width: 100%;
+  height: 350px;
+  background-color: #8EC5FC;
+  background: lemonchiffon;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+  position: relative;
+  bottom: 0;
+}
+.box .bookBox .book {
+  width: 150px;
+  height: 230px;
+  position: relative;
+  transform: perspective(900px) rotateX(0);
+  transform-style: preserve-3d;
+  transition: 2s;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.564);
+}
+.box .bookBox .book > .pages {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: wheat;
+  border: 1px solid black;
+}
+.box .bookBox .book > .pages:first-of-type {
+  background-image: url(img/1.jpg);
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+.box .bookBox .book > .pages:nth-of-type(1) {
+  transform: translate3D(0, 0, -0.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(2) {
+  transform: translate3D(0, 0, -0.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(3) {
+  transform: translate3D(0, 0, -0.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(4) {
+  transform: translate3D(0, 0, -0.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(5) {
+  transform: translate3D(0, 0, -0.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(6) {
+  transform: translate3D(0, 0, -0.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(7) {
+  transform: translate3D(0, 0, -0.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(8) {
+  transform: translate3D(0, 0, -0.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(9) {
+  transform: translate3D(0, 0, -0.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(10) {
+  transform: translate3D(0, 0, -1px);
+}
+.box .bookBox .book > .pages:nth-of-type(11) {
+  transform: translate3D(0, 0, -1.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(12) {
+  transform: translate3D(0, 0, -1.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(13) {
+  transform: translate3D(0, 0, -1.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(14) {
+  transform: translate3D(0, 0, -1.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(15) {
+  transform: translate3D(0, 0, -1.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(16) {
+  transform: translate3D(0, 0, -1.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(17) {
+  transform: translate3D(0, 0, -1.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(18) {
+  transform: translate3D(0, 0, -1.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(19) {
+  transform: translate3D(0, 0, -1.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(20) {
+  transform: translate3D(0, 0, -2px);
+}
+.box .bookBox .book > .pages:nth-of-type(21) {
+  transform: translate3D(0, 0, -2.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(22) {
+  transform: translate3D(0, 0, -2.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(23) {
+  transform: translate3D(0, 0, -2.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(24) {
+  transform: translate3D(0, 0, -2.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(25) {
+  transform: translate3D(0, 0, -2.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(26) {
+  transform: translate3D(0, 0, -2.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(27) {
+  transform: translate3D(0, 0, -2.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(28) {
+  transform: translate3D(0, 0, -2.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(29) {
+  transform: translate3D(0, 0, -2.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(30) {
+  transform: translate3D(0, 0, -3px);
+}
+.box .bookBox .book > .pages:nth-of-type(31) {
+  transform: translate3D(0, 0, -3.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(32) {
+  transform: translate3D(0, 0, -3.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(33) {
+  transform: translate3D(0, 0, -3.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(34) {
+  transform: translate3D(0, 0, -3.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(35) {
+  transform: translate3D(0, 0, -3.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(36) {
+  transform: translate3D(0, 0, -3.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(37) {
+  transform: translate3D(0, 0, -3.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(38) {
+  transform: translate3D(0, 0, -3.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(39) {
+  transform: translate3D(0, 0, -3.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(40) {
+  transform: translate3D(0, 0, -4px);
+}
+.box .bookBox .book > .pages:nth-of-type(41) {
+  transform: translate3D(0, 0, -4.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(42) {
+  transform: translate3D(0, 0, -4.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(43) {
+  transform: translate3D(0, 0, -4.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(44) {
+  transform: translate3D(0, 0, -4.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(45) {
+  transform: translate3D(0, 0, -4.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(46) {
+  transform: translate3D(0, 0, -4.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(47) {
+  transform: translate3D(0, 0, -4.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(48) {
+  transform: translate3D(0, 0, -4.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(49) {
+  transform: translate3D(0, 0, -4.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(50) {
+  transform: translate3D(0, 0, -5px);
+}
+.box .bookBox .book > .pages:nth-of-type(51) {
+  transform: translate3D(0, 0, -5.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(52) {
+  transform: translate3D(0, 0, -5.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(53) {
+  transform: translate3D(0, 0, -5.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(54) {
+  transform: translate3D(0, 0, -5.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(55) {
+  transform: translate3D(0, 0, -5.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(56) {
+  transform: translate3D(0, 0, -5.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(57) {
+  transform: translate3D(0, 0, -5.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(58) {
+  transform: translate3D(0, 0, -5.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(59) {
+  transform: translate3D(0, 0, -5.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(60) {
+  transform: translate3D(0, 0, -6px);
+}
+.box .bookBox .book > .pages:nth-of-type(61) {
+  transform: translate3D(0, 0, -6.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(62) {
+  transform: translate3D(0, 0, -6.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(63) {
+  transform: translate3D(0, 0, -6.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(64) {
+  transform: translate3D(0, 0, -6.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(65) {
+  transform: translate3D(0, 0, -6.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(66) {
+  transform: translate3D(0, 0, -6.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(67) {
+  transform: translate3D(0, 0, -6.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(68) {
+  transform: translate3D(0, 0, -6.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(69) {
+  transform: translate3D(0, 0, -6.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(70) {
+  transform: translate3D(0, 0, -7px);
+}
+.box .bookBox .book > .pages:nth-of-type(71) {
+  transform: translate3D(0, 0, -7.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(72) {
+  transform: translate3D(0, 0, -7.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(73) {
+  transform: translate3D(0, 0, -7.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(74) {
+  transform: translate3D(0, 0, -7.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(75) {
+  transform: translate3D(0, 0, -7.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(76) {
+  transform: translate3D(0, 0, -7.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(77) {
+  transform: translate3D(0, 0, -7.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(78) {
+  transform: translate3D(0, 0, -7.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(79) {
+  transform: translate3D(0, 0, -7.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(80) {
+  transform: translate3D(0, 0, -8px);
+}
+.box .bookBox .book > .pages:nth-of-type(81) {
+  transform: translate3D(0, 0, -8.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(82) {
+  transform: translate3D(0, 0, -8.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(83) {
+  transform: translate3D(0, 0, -8.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(84) {
+  transform: translate3D(0, 0, -8.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(85) {
+  transform: translate3D(0, 0, -8.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(86) {
+  transform: translate3D(0, 0, -8.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(87) {
+  transform: translate3D(0, 0, -8.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(88) {
+  transform: translate3D(0, 0, -8.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(89) {
+  transform: translate3D(0, 0, -8.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(90) {
+  transform: translate3D(0, 0, -9px);
+}
+.box .bookBox .book > .pages:nth-of-type(91) {
+  transform: translate3D(0, 0, -9.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(92) {
+  transform: translate3D(0, 0, -9.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(93) {
+  transform: translate3D(0, 0, -9.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(94) {
+  transform: translate3D(0, 0, -9.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(95) {
+  transform: translate3D(0, 0, -9.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(96) {
+  transform: translate3D(0, 0, -9.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(97) {
+  transform: translate3D(0, 0, -9.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(98) {
+  transform: translate3D(0, 0, -9.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(99) {
+  transform: translate3D(0, 0, -9.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(100) {
+  transform: translate3D(0, 0, -10px);
+}
+.box .bookBox .book > .pages:nth-of-type(101) {
+  transform: translate3D(0, 0, -10.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(102) {
+  transform: translate3D(0, 0, -10.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(103) {
+  transform: translate3D(0, 0, -10.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(104) {
+  transform: translate3D(0, 0, -10.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(105) {
+  transform: translate3D(0, 0, -10.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(106) {
+  transform: translate3D(0, 0, -10.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(107) {
+  transform: translate3D(0, 0, -10.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(108) {
+  transform: translate3D(0, 0, -10.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(109) {
+  transform: translate3D(0, 0, -10.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(110) {
+  transform: translate3D(0, 0, -11px);
+}
+.box .bookBox .book > .pages:nth-of-type(111) {
+  transform: translate3D(0, 0, -11.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(112) {
+  transform: translate3D(0, 0, -11.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(113) {
+  transform: translate3D(0, 0, -11.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(114) {
+  transform: translate3D(0, 0, -11.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(115) {
+  transform: translate3D(0, 0, -11.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(116) {
+  transform: translate3D(0, 0, -11.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(117) {
+  transform: translate3D(0, 0, -11.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(118) {
+  transform: translate3D(0, 0, -11.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(119) {
+  transform: translate3D(0, 0, -11.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(120) {
+  transform: translate3D(0, 0, -12px);
+}
+.box .bookBox .book > .pages:nth-of-type(121) {
+  transform: translate3D(0, 0, -12.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(122) {
+  transform: translate3D(0, 0, -12.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(123) {
+  transform: translate3D(0, 0, -12.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(124) {
+  transform: translate3D(0, 0, -12.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(125) {
+  transform: translate3D(0, 0, -12.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(126) {
+  transform: translate3D(0, 0, -12.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(127) {
+  transform: translate3D(0, 0, -12.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(128) {
+  transform: translate3D(0, 0, -12.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(129) {
+  transform: translate3D(0, 0, -12.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(130) {
+  transform: translate3D(0, 0, -13px);
+}
+.box .bookBox .book > .pages:nth-of-type(131) {
+  transform: translate3D(0, 0, -13.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(132) {
+  transform: translate3D(0, 0, -13.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(133) {
+  transform: translate3D(0, 0, -13.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(134) {
+  transform: translate3D(0, 0, -13.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(135) {
+  transform: translate3D(0, 0, -13.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(136) {
+  transform: translate3D(0, 0, -13.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(137) {
+  transform: translate3D(0, 0, -13.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(138) {
+  transform: translate3D(0, 0, -13.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(139) {
+  transform: translate3D(0, 0, -13.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(140) {
+  transform: translate3D(0, 0, -14px);
+}
+.box .bookBox .book > .pages:nth-of-type(141) {
+  transform: translate3D(0, 0, -14.1px);
+}
+.box .bookBox .book > .pages:nth-of-type(142) {
+  transform: translate3D(0, 0, -14.2px);
+}
+.box .bookBox .book > .pages:nth-of-type(143) {
+  transform: translate3D(0, 0, -14.3px);
+}
+.box .bookBox .book > .pages:nth-of-type(144) {
+  transform: translate3D(0, 0, -14.4px);
+}
+.box .bookBox .book > .pages:nth-of-type(145) {
+  transform: translate3D(0, 0, -14.5px);
+}
+.box .bookBox .book > .pages:nth-of-type(146) {
+  transform: translate3D(0, 0, -14.6px);
+}
+.box .bookBox .book > .pages:nth-of-type(147) {
+  transform: translate3D(0, 0, -14.7px);
+}
+.box .bookBox .book > .pages:nth-of-type(148) {
+  transform: translate3D(0, 0, -14.8px);
+}
+.box .bookBox .book > .pages:nth-of-type(149) {
+  transform: translate3D(0, 0, -14.9px);
+}
+.box .bookBox .book > .pages:nth-of-type(150) {
+  transform: translate3D(0, 0, -15px);
+}
+.box > .text {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px;
+  transition: 2s;
+}
+.box > .text h2 {
+  height: 40px;
+  font-size: 30px;
+  color: lemonchiffon;
+  text-transform: uppercase;
+  font-family: "Courgette", cursive;
+}
+.box > .text p {
+  padding-top: 20px;
+  line-height: 30px;
+  font-family: "Ysabeau SC", sans-serif;
+  color: lemonchiffon;
+}/*# sourceMappingURL=master.css.map */
